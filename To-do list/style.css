@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'sans-serif'; 
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.todo-box{
+    width: 100%;
+    max-width: 640px;
+    background-color:#fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-box h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-box h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
