@@ -10,5 +10,9 @@ function addTask(){
         let li = document.createElement('li');
         li.innerText = userInput.value;
         displayBox.appendChild(li);
+        let span = document.createElement('span');
+        span.innerHTML = "\u00d7";
+        li.appendChild(span);
     }
+    userInput.value = '';
 }
