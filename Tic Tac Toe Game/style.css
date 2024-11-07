@@ -1,0 +1,210 @@
+/* Importing the google font family  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Header and some General CSS code */
+/* ===========================*/
+body{
+    margin: 0;
+    font-family: 'sans-serif open sans-serif';
+    color: rgb(44, 41, 44);
+    background-color: rgb(247, 239, 247);
+}
+
+#main-header{
+    background-color: rgb(140, 0, 255);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.btn{
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(140, 0, 255);
+    border: 1px solid rgb(140, 0, 255);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-alt{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(140, 0, 255);
+}
+
+.btn:hover{
+    background-color: rgb(79, 10, 190);
+    border-color: rgb(79, 10, 190);;
+}
+
+.btn-alt:hover{
+    background-color: rgb(230, 201, 252);
+    background-color: transparent;
+}
+
+/* Overlay or model section CSS code  */
+/* ==============================*/
+.model {
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    width: 90%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0, 0.2);
+    text-align: center;
+    display: none;
+}
+
+.form-control label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control input{
+    font: inherit;
+    width: 15rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(204,204,204);
+}
+
+
+#backdrop{
+    background-color: rgba(0,0,0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.error label{
+    color: rgb(136, 2, 2);     
+}
+
+.error input{
+    border-color: red;
+    color: red;
+    background-color: rgb(253, 219, 219);
+}
+
+/* #input-error-msg{
+    color: red;
+} */
+
+@media (min-width: 48rem) {
+    .model {
+        left: calc(33% - 20px);
+        width: 40rem;
+    }
+}
+
+/* Game configurations section CSS code  */
+/* ================================*/
+#game-configuration{
+    width: 90%;
+    text-align: center;
+    max-width: 40rem;
+    margin: 3rem auto;
+}
+
+#game-configuration ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#game-configuration li {
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+    background-color: rgb(243, 227, 255);
+    border-radius: 4px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#game-configuration h2{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+#game-configuration h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: rgb(94, 4, 168);
+}
+
+#game-configuration p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(47, 4, 82);
+    margin: 0.5rem 0;
+}
+
+/* Active or Game section CSS Code  */
+/* ==============================*/
+#active-game{
+    text-align: center;
+    margin: 2rem 0 5rem 0;
+    display: none;
+}
+
+#game-over{
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: rgb(50, 5, 87);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    display: none;
+}
+
+#game-over h2{
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+#active-payer-name{
+    font-weight:bold;
+    color: rgb(50, 5, 87);
+}
+
+#game-board{
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem); /* 6rem 6rem 6rem */
+    grid-template-rows: repeat(3, 6rem);
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#game-board li{
+    background-color: rgb(215, 187, 247);
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#game-board li:hover{
+    background-color: rgb(112, 13, 204);
+}
+
+#game-board li.disabled{
+    background-color: rgb(112, 13, 204);
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
