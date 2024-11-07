@@ -1,10 +1,11 @@
 # JavaScript Projects
 
-This repository contains a collection of three projects that serve as a great starting point for learning HTML, CSS, and JavaScript. The projects included are:
+This repository contains a collection of JS projects that serve as a great starting point for learning HTML, CSS, and JavaScript. The projects included are:
 
 1. **Todo List**
 2. **Calculator**
 3. **Tic Tac Toe**
+4. **General Small Practices**
 
 These projects cover a range of web development concepts and are designed to help you build your skills in creating interactive and functional web applications.
 
