@@ -1,0 +1,32 @@
+body{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.project-des {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+.project-list ul {
+    list-style: none;
+    padding: 0;
+}
+.project-list ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.project-list ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
