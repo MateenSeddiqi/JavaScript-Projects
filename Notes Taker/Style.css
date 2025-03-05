@@ -44,11 +44,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 30%;
+    width: 33%;
 }
 
 .notes-container .input-box{
-    position: relative;
     width: 100%;
     max-width: 500px;
     min-height: 150px;
@@ -62,14 +61,15 @@
 
 .note-action {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: 98%;
 }
 
-.note-action .delete-button{
-    margin-left: auto;
+.note-action .note-date{
+    margin-right: auto;
 }
+
 .notes-container .delete-button img{
     height: 25px;
     cursor: pointer;
