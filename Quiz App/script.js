@@ -36,11 +36,11 @@ const questions = [
         ]
 
     }
-]
+];
 
 
 const questionElement= document.getElementById("question");
-const answerElement = document.getElementById("answer-buttons");
+const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex= 0;
@@ -54,15 +54,18 @@ function startQuiz(){
 }
 
 function showQuestion(){
+    // answerButton.innerHTML = "";
+
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-    currentQuestion.answers.forEach(answers => {
+    currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
-        button.innerHTML = answers.text;
+        button.innerHTML = answer.text;    
         button.classList.add("btn");
         answerButton.appendChild(button);
     });
 }
 
+startQuiz();
